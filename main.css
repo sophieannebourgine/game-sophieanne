@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+
+/* Index 1  */
+* {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+a {
+    text-decoration: none;
+    outline:0;
+
+}
+a:focus {
+    text-decoration: none;
+    outline:0;
+
+}
+
+.trump {
+    width: 130px;
+    height: auto;
+}
+
+.leo1 {
+    width: 160px;
+    height: auto;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   { left:-10px; top:0px;}
+    50%  { left:570px; top:0px;}
+    100% { left:1120px; top:0px;}
+  }
+
+.background {
+    background: url(./background.jpg) 0 0 no-repeat;
+    /* opacity: 0.75; */
+    background-size: cover;
+    height: 600px;
+    width: 1120px;
+    padding-top: 5px;
+    position: relative;
+overflow-x: hidden;  }
+  
+  .h1 {
+      display:flex;
+      justify-content: center;
+      font-size: 40px;
+  }
+
+  .h2 {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px; 
+  }
+
+  .gifs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    grid-row-start: 4;
+
+  }
+
+
+  .rules {
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+  }
+
+
+
+  .start {
+      display: block;
+      margin: auto;
+      width: 130px;
+      height: 60px;
+      background-color: yellow;
+      font-size: 30px;
+      border: 7px red solid ;
+      outline: 0;
+      animation: start 1s infinite;
+      
+
+    }
+
+    @keyframes start{
+        0%{opacity: 1;}
+        50%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+  
+  .start:hover {
+      color: blue;
+      background-color: green;
+      cursor:pointer;
+      -webkit-animation-play-state:paused;
+      -moz-animation-play-state:paused;
+      -o-animation-play-state:paused;
+      animation-play-state:paused;
+      cursor: pointer;
+  }
+
+  .signature {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 10px;
+  }
+
+
+
+
+
+/* Index 2 */
+
+.container.gif-leo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+
+    
+    }
+
+#gifLeo {
+    grid-row-start: 4;
+    grid-column-start:1; 
+    position: absolute;
+    display: block;
+    transform: scaleX(1);
+    z-index: 1;
+    
+
+}
+
+#gifLeo.go-left {
+    transform: scaleX(-1);
+
+}
+
+
+
+#gifTrump {
+    display: block;
+    position: absolute;
+
+    /* -webkit-animation: moveX 4.05s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
+    -moz-animation: moveX 4.05s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
+    -o-animation: moveX 4.05s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate; */
+    animation: moveX 4.05s linear 0s infinite alternate, moveY 4.4s linear 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 88%; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 88%; }
+  }
+
+
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: 120%; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: 120%; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 90%; }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: 80%; }
+  }
+
+
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Luckiest Guy', cursive;
+
+}
+
+
+.background2 {
+    background: url(./background.jpg) 0 0 no-repeat;
+    background-size: cover;
+    height: 660px;
+    max-width:100%;
+    border: 1px solid green;
+    position: relative;
+      display: grid;
+        grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+        grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+ 
+}
+
+
+#gifBraconnier {
+    display: block;
+    position: absolute;
+
+    -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 100%; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 88%; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 88%; }
+  }
+
+
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: 120%; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: 120%; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 80%; }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: 68%; }
+  }
+
+  .pop {
+    position: fixed;
+    align-content: center;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    
+  }
+
+  #gameOver {
+    position: absolute;
+    top:0;
+    width:50vw;
+    height:60vh;
+    background:orange;
+    opacity: 0;
+    transition: opacity 1s linear;
+    z-index: 2;
+    margin-top:140px;
+    border-radius: 40px;
+  }
+
+  #gameOver.isActive {
+    opacity: 1;
+  }
+
+
+  #gameWon { 
+    top:0;
+    width:50vw;
+    height:50vh;
+    background:green;
+    border-radius: 40px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    z-index: 2;
+    margin-top: 160px;
+  }
+
+  #gameWon.isActive {
+    opacity: 1;
+
+  }
+
+ 
+.restart {
+  display: block;
+  margin: 10px auto ;
+  width: 150px;
+  height: 60px;
+  background-color: yellow;
+  font-size: 30px;
+  border: 7px red solid ;
+  outline: 0;
+  animation: start 1s infinite;
+  padding: 10px;
+ 
+}
+ 
+@keyframes restart{
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.title-pop {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px; 
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.restart:hover {
+  color: blue;
+  background-color: green;
+  cursor:pointer;
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+}
+
