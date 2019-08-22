@@ -93,17 +93,17 @@ function collision() {
     rectLeo.y + rectLeo.height - 60 > rectTrump.y
   ) {
     gameOver=false;
-    const lea  = document.getElementById('gifBraconnier');
-    var rectLea = lea.getBoundingClientRect();
-    let top = rectLea.top;
-    let left = rectLea.left;
-    let right = rectLea.right;
-    let bottom = rectLea.bottom;
-    lea.style.animation = "toto";
-    lea.style.top = top +"px"
-    lea.style.bottom = bottom +"px"
-    lea.style.right = right +"px"
-    lea.style.left = left +"px"
+      const trmp  = document.getElementById('gifTrump');
+    var rectTrmp = trmp.getBoundingClientRect();
+    let top = rectTrmp.top;
+    let left = rectTrmp.left;
+    let right = rectTrmp.right;
+    let bottom = rectTrmp.bottom;
+    trmp.style.animation = "toto";
+    trmp.style.top = top +"px"
+    trmp.style.bottom = bottom +"px"
+    trmp.style.right = right +"px"
+    trmp.style.left = left +"px"
     console.log("in if collision");
     document.getElementById("gameWon").classList.add("isActive");
    
@@ -116,21 +116,19 @@ function collision() {
   ) {
     gameOver=true;
     clearInterval(collisionInterval)
-    const trmp  = document.getElementById('gifTrump');
-    var rectTrmp = trmp.getBoundingClientRect();
-    let top = rectTrmp.top;
-    let left = rectTrmp.left;
-    let right = rectTrmp.right;
-    let bottom = rectTrmp.bottom;
-    trmp.style.animation = "toto";
-    trmp.style.top = top +"px"
-    trmp.style.bottom = bottom +"px"
-    trmp.style.right = right +"px"
-    trmp.style.left = left +"px"
+    const lea  = document.getElementById('gifBraconnier');
+    var rectLea = lea.getBoundingClientRect();
+    let top = rectLea.top;
+    let left = rectLea.left;
+    let right = rectLea.right;
+    let bottom = rectLea.bottom;
+    lea.style.animation = "toto";
+    lea.style.top = top +"px"
+    lea.style.bottom = bottom +"px"
+    lea.style.right = right +"px"
+    lea.style.left = left +"px"
+ 
     
-  
-
-
     
     console.log("in if collision braco");
     document.getElementById("gameOver").classList.add("isActive");
@@ -139,35 +137,3 @@ function collision() {
 
   }
 }
-
-
-
- 
- function createFire(gifTrumpDead) {
-  const img = document.createElement("img");
-  img.src = "./trump-dead.gif";
-  img.classList.add("fire")
-  window.setTimeout(() => {
-    img.remove();
-  }, 700)
- }
-
-//  function molesMoving() {
-//   intervalID = window.setInterval(function() {
-//     const currentMole = document.querySelector(".mole.moleAppearing");
-//     const mole =  moles[randomMole(moles)];
-//     if (currentMole) currentMole.classList.remove('moleAppearing');
-//     mole.classList.toggle('moleAppearing');
-//   }, moleAppearingDelay);
-//  }
-//  et ensuite c'est ça qui permet de créer l'élément:
-//  function createPoof(mole) {
-//   const parent = mole.parentElement;
-//   const img = document.createElement("img");
-//   img.src = "./images/poof.gif";
-//   img.classList.add("poof")
-//   parent.appendChild(img);
-//   window.setTimeout(() => {
-//     img.remove();
-//   }, 700)
-//  }
