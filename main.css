@@ -33,13 +33,14 @@ a:focus {
     animation-name: example;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+
 }
 
-@keyframes example {
-    0%   { left:-10px; top:0px;}
-    50%  { left:570px; top:0px;}
+ @keyframes example {
+    0%   { left:-560px; top:0px;}
+    50%  { left:500px; top:0px;}
     100% { left:1120px; top:0px;}
-  }
+  } 
 
 .background {
     background: url(./background.jpg) 0 0 no-repeat;
@@ -57,13 +58,14 @@ align-items:center;  }
       display:flex;
       justify-content: center;
       font-size: 40px;
+      padding-top: 40px;
   }
 
   .h2 {
     display:flex;
     justify-content: center;
     text-align: center;
-    font-size: 40px; 
+    font-size: 50px; 
   }
 
   .gifs{
@@ -78,7 +80,7 @@ align-items:center;  }
   .rules {
       display: flex;
       justify-content: center;
-      font-size: 15px;
+      font-size: 20px;
   }
 
 
@@ -112,6 +114,8 @@ align-items:center;  }
       -o-animation-play-state:paused;
       animation-play-state:paused;
       cursor: pointer;
+      animation: start 1s infinite;
+
   }
 
   .signature {
@@ -202,18 +206,18 @@ align-items:center;  }
 
 }
 
-
+body {
+  background-color: lightblue;
+}
 .background2 {
     background: url(./background.jpg) 0 0 no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 670px;
     max-width:100%;
     overflow-x: hidden;
-
-    border: 1px solid green;
     position: relative;
       display: grid;
         grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
@@ -320,9 +324,6 @@ align-items:center;  }
   /* padding: 10px; */
  
 }
-
-
-
  
 @keyframes restart{
   0%{opacity: 1;}
@@ -354,5 +355,7 @@ align-items:center;  }
   -o-animation-play-state:paused;
   animation-play-state:paused;
   cursor: pointer;
+  animation: start 1s infinite;
+
 }
 

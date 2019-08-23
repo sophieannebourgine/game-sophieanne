@@ -132,6 +132,7 @@ function collision() {
     
     console.log("in if collision braco");
     document.getElementById("gameOver").classList.add("isActive");
+    document.getElementById("").classList.add("isActive");
 
 
 
